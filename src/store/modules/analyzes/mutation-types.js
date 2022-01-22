@@ -1,0 +1,3 @@
+export const ADD_ANALYZE = "ADD_ANALYZE";
+export const SET_ANALYZES = "SET_ANALYZES";
+export const UPDATE_ANALYZE = "UPDATE_ANALYZE";

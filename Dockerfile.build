@@ -1,0 +1,10 @@
+FROM nicogg/bilygine-vuejs
+
+ENV VUE_APP_API_SERVER=http://api.ubuntu.lol
+ENV VUE_APP_BRIDGE_SERVER=http://bridge.ubuntu.lol
+
+WORKDIR /app
+
+RUN npm run build
+EXPOSE 80
+ENTRYPOINT ["http-server", "dist", "-p", "80"]
